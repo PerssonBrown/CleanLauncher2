@@ -20,7 +20,7 @@ namespace CleanLauncher.Pages
             proc.Start();
         }
 
-        private void OpenLauncherWebsite(object sender, RoutedEventArgs e)   // 打开项目仓库
+        private void OpenLauncherWebsite(object sender, RoutedEventArgs e)   // 打开启动器官网
         {
             System.Diagnostics.Process proc = new System.Diagnostics.Process();
             proc.StartInfo.FileName = "https://cleanlauncher.github.io";
