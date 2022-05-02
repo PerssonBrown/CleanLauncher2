@@ -39,7 +39,7 @@
                             <StackPanel>
                                 <Button Height="40" Width="150" Content="登陆账号" FontSize="17" pu:ButtonHelper.ButtonStyle="Outline" BorderBrush="Black" Foreground="Black" pu:ButtonHelper.ClickStyle="Sink" Margin="0,20,0,0"/>
                                 <StackPanel Width="140" Margin="0,7,0,0" Orientation="Horizontal">
-                                    <Image Height="10" Width="10" Source="Image/Failed.png" />
+                                    <Image Height="10" Width="10" Source="/Image/Failed.png" />
                                     <TextBlock Text="当前状态：未登录" Margin="10,0,0,0" />
                                 </StackPanel>
                                 <TextBlock Width="140" Text="什么是 微软登录 ？" FontSize="17" Margin="0,20,0,0" />

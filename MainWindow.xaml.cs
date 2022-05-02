@@ -13,18 +13,6 @@ namespace CleanLauncher
         public MainWindow()
         {
             InitializeComponent();
-            //WriteKey();
-        }
-
-        private void WriteKey() // 写入 KEY.Square 以验证用户是否有权使用启动器
-        {
-            if (!File.Exists(Path.GetTempPath() + @"\KEY.Square"))
-            {
-                FileStream fileStream = File.Create(Path.GetTempPath() + @"\KEY.Square");
-                fileStream.Write(Properties.Resources.KEY, 0, Properties.Resources.KEY.Length);
-                fileStream.Dispose();
-                fileStream.Close();
-            }
         }
 
         private void OpenHomePage(object sender, RoutedEventArgs e) // 切换界面到 Home
