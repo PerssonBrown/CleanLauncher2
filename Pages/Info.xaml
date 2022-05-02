@@ -11,19 +11,23 @@
 
     <Grid>
         <StackPanel>
-            <TextBlock Height="25" Width="150" Text="Clean Launcher" FontSize="20" VerticalAlignment="Top" Margin="0,20,0,0" />
+            <!--<TextBlock Height="25" Width="150" Text="Clean Launcher" FontSize="20" VerticalAlignment="Top" Margin="0,20,0,0" />-->
+            <Button Content="Clean Launcher" FontSize="20" pu:ButtonHelper.ButtonStyle="Link" Foreground="Black" Margin="0,20,0,0" Click="OpenLauncherWebsite" />
             <GroupBox Width="700" Header=" 关于 Clean Launcher 启动器" FontSize="17" pu:GroupBoxHelper.CornerRadius="5" pu:GroupBoxHelper.HeaderPadding="5,6,0,6" pu:GroupBoxHelper.IsSplitLineVisible="True" Margin="0,19,0,0" >
                 <StackPanel>
                     <TextBlock Text="作者：PerssonBrown" FontSize="15" Margin="0,10,0,0" />
-                    <TextBlock Text="项目仓库：https://www.github.com/PerssonBrown/CleanLauncher2" FontSize="15" Margin="0,10,0,0" />
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBlock Text="项目仓库：" FontSize="15" />
+                        <Button Content="https://www.github.com/PerssonBrown/CleanLauncher2" FontSize="15" pu:ButtonHelper.ButtonStyle="Link" Foreground="Black" Click="OpenRepository" />
+                    </StackPanel>
                     <TextBlock Text="Clean Launcher 版本号：Release 2.1.0" FontSize="15" Margin="0,10,0,0" />
                 </StackPanel>
             </GroupBox>
             <GroupBox Width="700" Header=" 特别鸣谢" FontSize="17" pu:GroupBoxHelper.CornerRadius="5" pu:GroupBoxHelper.HeaderPadding="5,6,0,6" pu:GroupBoxHelper.IsSplitLineVisible="True" Margin="0,19,0,0" >
                 <StackPanel>
-                    <TextBlock Text="Baibao" FontSize="15" Margin="0,10,0,0" />
+                    <TextBlock Text="Baibao132" FontSize="15" Margin="0,10,0,0" />
                     <TextBlock Text="为本项目提供了启动核心SquareMinecraftLauncherCore" FontSize="12" Margin="0,0,0,0" />
-                    <TextBlock Text="YuXuan862" FontSize="15" Margin="0,10,0,0" />
+                    <TextBlock Text="Yu_Xuan" FontSize="15" Margin="0,10,0,0" />
                     <TextBlock Text="为本项目提供了许多帮助" FontSize="12" Margin="0,0,0,0" />
                     <TextBlock Text="Clean Launcher用户群的各位" FontSize="15" Margin="0,10,0,0" />
                     <TextBlock Text="感谢各位一直以来对本项目的支持与鼓励" FontSize="12" Margin="0,0,0,0" />

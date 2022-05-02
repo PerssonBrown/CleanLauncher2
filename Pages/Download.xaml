@@ -13,7 +13,7 @@
         <GroupBox Height="370" Width="700" Header=" 游戏下载" FontSize="17" pu:GroupBoxHelper.CornerRadius="5" pu:GroupBoxHelper.HeaderPadding="5,6,0,6" pu:GroupBoxHelper.IsSplitLineVisible="True" VerticalAlignment="Top" Margin="0,30,0,0" >
             <Grid>
                 <ListView Height="280" Width="450" x:Name="versionsList" HorizontalAlignment="Left" Margin="35,0,0,0" />
-                <ComboBox Height="30" Width="150" FontSize="15" pu:ComboBoxHelper.Header="类型：" SelectedIndex="0" HorizontalAlignment="Right" Margin="0,0,35,0" >
+                <ComboBox Height="30" Width="150" FontSize="15" SelectedIndex="0" HorizontalAlignment="Right" Margin="0,0,35,0" >
                     <ComboBoxItem Content="正式版" />
                 </ComboBox>
                 <Button Height="40" Width="150" Content="下载" FontSize="17" pu:ButtonHelper.ButtonStyle="Outline" BorderBrush="Black" Foreground="Black" pu:ButtonHelper.ClickStyle="Sink" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,35,25" />

@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 
 namespace CleanLauncher.Pages
 {
@@ -10,6 +11,20 @@ namespace CleanLauncher.Pages
         public Info()
         {
             InitializeComponent();
+        }
+
+        private void OpenRepository(object sender, RoutedEventArgs e)   // 打开项目仓库
+        {
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = "https://github.com/PerssonBrown/CleanLauncher2";
+            proc.Start();
+        }
+
+        private void OpenLauncherWebsite(object sender, RoutedEventArgs e)   // 打开项目仓库
+        {
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.StartInfo.FileName = "https://cleanlauncher.github.io";
+            proc.Start();
         }
     }
 }
