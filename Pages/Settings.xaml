@@ -10,6 +10,16 @@
       Title="Settings">
 
     <Grid>
-        
+        <StackPanel>
+            <GroupBox Width="700" Header=" Java选项" FontSize="17" pu:GroupBoxHelper.CornerRadius="5" pu:GroupBoxHelper.HeaderPadding="5,6,0,6" pu:GroupBoxHelper.IsSplitLineVisible="True" Margin="0,19,0,0" >
+                <StackPanel>
+                    <ComboBox Height="30" Width="350" x:Name="javaVersions" pu:ComboBoxHelper.Header="Java版本：" HorizontalAlignment="Left" />
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <TextBox Height="30" Width="200" x:Name="userSetRAM" Text="2048" pu:TextBoxHelper.Watermark="单位MB" pu:TextBoxHelper.Header="Java内存：" HorizontalAlignment="Left" />
+                        <CheckBox Height="30" Width="150" x:Name="autoSetRAM"  Content="自动选择合适内存" Margin="20,0,0,0" Click="ChangeRAMSettingMode" />
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
     </Grid>
 </Page>

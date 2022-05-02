@@ -5,13 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using SquareMinecraftLauncher.Minecraft;
 
 namespace CleanLauncher.Pages
 {
@@ -23,6 +17,29 @@ namespace CleanLauncher.Pages
         public Settings()
         {
             InitializeComponent();
+            InitJavaversions();
+        }
+
+        private void InitJavaversions()
+        {
+            Tools tools = new Tools();
+            var javaPaths = tools.GetJavaPath();
+            foreach (var javaPath in javaPaths)
+            {
+                javaVersions.Items.Add(javaPath.Path);
+            }
+        }
+
+        private void ChangeRAMSettingMode(object sender, RoutedEventArgs e)
+        {
+            if (autoSetRAM.IsChecked == true)
+            {
+                userSetRAM.IsEnabled = false;
+            }
+            else if (autoSetRAM.IsChecked == false)
+            {
+                userSetRAM.IsEnabled = true;
+            }
         }
     }
 }
